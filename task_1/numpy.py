@@ -28,3 +28,4 @@ class Array:
             return self.data[index[0]][index[1]]  # Tableau 2D
         else:
             return self.data[index]  # Tableau 1D
+
