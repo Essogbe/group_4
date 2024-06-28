@@ -112,11 +112,11 @@ La zone grise autour de la ligne bleue indique l'intervalle de confiance, soulig
    - switch_api : Permet de basculer entre l'utilisation locale du modèle et une API distante.
    - listen_sse et fetch_generated_image : Gèrent la communication avec l'API distante.
  
- ## Contributeurs
+  ## Contributeurs
    - **Ismael OGOUBIYI**
    - **Romuald AMEGBEDJI**
    - **Leonce OROU AWA**
- ## Remarques
+  ## Remarques
    * Le modèle est téléchargé et mis en cache dans le répertoire courant.
    * Pour l'utilisation d'une API distante, l'application demande l'URL de l'API.
 
