@@ -70,4 +70,4 @@
   ## Tâche 3
    - **Ismael OGOUBIYI** - 32%
    - **Romuald AMEGBEDJI** - 36%
-   - **Leonce OROU AWA** -32%
+   - **Leonce OROU AWA** - 32%
