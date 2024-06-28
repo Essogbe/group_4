@@ -49,6 +49,13 @@ print(f"i: {i}")
 ```
 
 # Tâche 2
+## Interprétation Histogramme
+L'histogramme montre la distribution des propriétés en fonction du nombre de chambres. La majorité des propriétés dans le dataset ont entre 2 et 4 chambres, ce qui représente le segment le plus fréquent. Les maisons avec 1 à 5 chambres sont moins courantes, suggérant une distribution non uniforme. Cette tendance indique que le marché immobilier est principalement composé de maisons conçues pour des familles de taille moyenne.
+
+## Interprétation Nuage de Points
+Le nuage de points illustre la relation entre la surface (area) et le prix (price) des observations. Chaque point représente une observation individuelle, montrant comment le prix varie en fonction de la surface. La ligne bleue représente la tendance générale de cette relation : en général, à mesure que la surface augmente, le prix a tendance à augmenter également. Cependant, cette relation n'est pas parfaitement linéaire, comme en témoigne la courbure de la ligne bleue.
+La zone grise autour de la ligne bleue indique l'intervalle de confiance, soulignant une incertitude croissante pour les valeurs de surface plus élevées. Cette incertitude suggère que pour des surfaces plus grandes, le prix devient plus variable et moins prévisible. De plus, la dispersion des points autour de la ligne de tendance indique que d'autres facteurs influencent également le prix en plus de la surface. La présence de valeurs aberrantes mérite une analyse approfondie pour comprendre leur impact sur la relation observée.
+
 ## Contributeurs
  - **SODABI Emmanuella : Histogramme en R**
  - **KINZOUN Elfried : Nuage de points en R**
