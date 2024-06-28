@@ -1,5 +1,5 @@
 
-data <- read.csv("C:\\Users\\emma\\OneDrive\\Bureau\\r_work\\Housing.csv")
+data <- read.csv("Housing.csv")
 head(data)
 
 print(names(data))
