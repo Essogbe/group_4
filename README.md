@@ -1,4 +1,6 @@
-# Tâche3
+# Tâche 1
+# Tâche 2
+# Tâche 3
 ## GeniArt
 GeniArt est une application basée sur Tkinter qui utilise un modèle de diffusion pour générer des images à partir de descriptions textuelles. L'application offre également la possibilité de sauvegarder les images générées.
 
