@@ -38,7 +38,6 @@ source venv/bin/activate
 - Sauvegarde d'images : Sauvegarde des images générées.
 - Choix du mode : Choix entre l'utilisation locale du modèle ou une API distante pour la génération d'images.
 
-
 ## Structure du Code
 - Classe App : Contient toute la logique de l'application.
   - __init__ : Initialise l'application, configure l'interface utilisateur et initialise les widgets.
@@ -48,3 +47,6 @@ source venv/bin/activate
   - save_image : Sauvegarde l'image générée sur le disque.
   - switch_api : Permet de basculer entre l'utilisation locale du modèle et une API distante.
   - listen_sse et fetch_generated_image : Gèrent la communication avec l'API distante.
+
+## Contributeurs
+   - Ismael OGOUBIYI
