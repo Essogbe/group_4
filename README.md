@@ -1,11 +1,60 @@
 # Tâche 1
+# Array Class
+
+La classe `Array` implémente un tableau flexible en Python, supportant à la fois des tableaux 1D et 2D, ainsi que diverses opérations mathématiques élémentaires.
+
+## Fonctionnalités
+- **Tableaux 1D et 2D :** Gestion des tableaux de dimensions variables.
+- **Opérations mathématiques :** Addition, soustraction, multiplication (par un scalaire ou par un autre tableau), division (par un scalaire ou par un autre tableau), et produit scalaire pour les tableaux 1D.
+- **Accès aux éléments :** Permet l'accès et la modification des éléments individuels ainsi que des tranches du tableau.
+- **Présence d'un élément :** Vérifie si un élément est présent dans le tableau.
+- **Représentation :** Méthode pour afficher une représentation textuelle de l'objet `Array`.
+- **Longueur du tableau :** Retourne le nombre total d'éléments dans le tableau principal.
+
+## Exemples d'utilisation
+
+```python
+from array import Array
+
+# Tableaux 1D
+a = Array([1, 2, 3, 4, 5])
+b = Array([5, 4, 3, 2, 1])
+
+# Opérations
+c = a + b  # Addition
+d = a * 2  # Multiplication par un scalaire
+e = a @ b  # Produit scalaire
+
+print(f"a: {a}")
+print(f"b: {b}")
+print(f"c: {c}")
+print(f"d: {d}")
+print(f"e: {e}")
+
+# Accès aux éléments et longueur
+print(f"Longueur de a: {len(a)}")
+
+# Tableaux 2D
+f = Array([[1, 2], [3, 4]])
+g = Array([[4, 3], [2, 1]])
+
+# Opérations
+h = f + g  # Addition
+i = f * 2  # Multiplication par un scalaire
+
+print(f"f: {f}")
+print(f"g: {g}")
+print(f"h: {h}")
+print(f"i: {i}")
+```
+
 # Tâche 2
 ## Contribution des membres du groupe
-
- ### SODABI Emmanuella : Histogramme en R 
-### KINZOUN Elfried : Nuage de points en R
-### TOKAN Princia : Histogramme en python
-### COMADOU Syldon : Nuage de points en python
+ - **SODABI Emmanuella : Histogramme en R **
+ - **KINZOUN Elfried : Nuage de points en R**
+ - **TOKAN Princia : Histogramme en python**
+ - **COMADOU Syldon : Nuage de points en python**
+   
 # Tâche 3
  ## GeniArt
  GeniArt est une application basée sur Tkinter qui utilise un modèle de diffusion pour générer des images à partir de descriptions textuelles. L'application offre également la possibilité de sauvegarder les images générées.
