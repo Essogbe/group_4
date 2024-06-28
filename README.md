@@ -1,5 +1,16 @@
 # Tâche 1
 # Tâche 2
+ ** Histogramme en R**
+ _Installation de R_studio
+ _Telechargement du dataset (hoising.csv)
+ _Affichage du dataset dans R
+ _affichage du graphe avec le code 
+ _affichage du graphe dans visuali
+ _Interprétation dans zone de texte 
+ _Clonez le dépôt et changer les fichiers.
+** L'histogramme montre que la plupart des propriétés dans le dataset ont entre 2 et 4 chambres, ce qui représente le segment le plus fréquent. Les maisons avec 1 à 5 chambres sont moins courantes, indiquant une distribution moins uniforme. Cette tendance suggère que le marché immobilier est principalement composé de maisons adaptées à des familles de taille moyenne.
+**
+
 # Tâche 3
 ## GeniArt
 GeniArt est une application basée sur Tkinter qui utilise un modèle de diffusion pour générer des images à partir de descriptions textuelles. L'application offre également la possibilité de sauvegarder les images générées.
