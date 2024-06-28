@@ -50,7 +50,7 @@ print(f"i: {i}")
 
 # Tâche 2
 ## Contribution des membres du groupe
- - **SODABI Emmanuella : Histogramme en R **
+ - **SODABI Emmanuella : Histogramme en R**
  - **KINZOUN Elfried : Nuage de points en R**
  - **TOKAN Princia : Histogramme en python**
  - **COMADOU Syldon : Nuage de points en python**
