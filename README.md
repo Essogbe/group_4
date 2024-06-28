@@ -115,12 +115,11 @@ print(f"i: {i}")
 
 # Contributions
   ## Tâche 1
-  ## Tâche 
-  
-  -**KINZOUN Elfried** :25%
-  -**SODABI Emmanuella** : 20%
-  -**TOKAN Princia** : 20%
-  -**COMADOU Syldon** : 35%
+  ## Tâche 2
+   - **KINZOUN Elfried** :25%
+   - **SODABI Emmanuella** : 20%
+   - **TOKAN Princia** : 20%
+   - **COMADOU Syldon** : 35%
   ## Tâche 3
    - **Ismael OGOUBIYI** - 32%
    - **Romuald AMEGBEDJI** - 36%
