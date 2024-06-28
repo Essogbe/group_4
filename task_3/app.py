@@ -124,10 +124,6 @@ class App:
                 else:
                     self.progressbar.set(float(stream.split("data:")[1]))
 
-
-
-
-
         except Exception as e:
             messagebox.showerror("Error", f"Error listening to SSE: {e}")
 
