@@ -1,6 +1,6 @@
 # Tâche 1
 # Tâche 2
- ** Histogramme en R**
+ ** Histogramme en R Emmanuella SODABI**
 
  _Installation de R_studio
 
