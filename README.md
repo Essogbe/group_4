@@ -63,3 +63,11 @@ pip install -r requirements.txt
 ## Remarques
    * Le modèle est téléchargé et mis en cache dans le répertoire courant.
    * Pour l'utilisation d'une API distante, l'application demande l'URL de l'API.
+
+# Contributions
+ ## Tâche 1
+ ## Tâche 2
+ ## Tâche 3
+   - **Ismael OGOUBIYI** - 32%
+   - **Romuald AMEGBEDJI** - 36%
+   - **Leonce OROU AWA** -32%
