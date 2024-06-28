@@ -21,13 +21,17 @@ source venv/bin/activate
 ```
 
 4. Installez les dépendances nécessaires :
-   ```   pip install -r requirements.txt  ```
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Utilisation
 1. Lancez l'application :
-    python app.py
-2. Entrez une description dans le champ de texte et cliquez sur le bouton "Générer" pour générer une image.
-3. Une fois l'image générée, le bouton "Enregistrer sous" sera activé. Cliquez dessus pour enregistrer l'image sur votre disque.
+```
+   python app.py
+```
+3. Entrez une description dans le champ de texte et cliquez sur le bouton "Générer" pour générer une image.
+4. Une fois l'image générée, le bouton "Enregistrer sous" sera activé. Cliquez dessus pour enregistrer l'image sur votre disque.
 
 ## Fonctionnalités
 - Génération d'images : Génération d'images à partir de descriptions textuelles.
