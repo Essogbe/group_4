@@ -12,7 +12,7 @@ class App:
 
         ctk.set_appearance_mode("dark")
 
-        self.canvas = tk.Canvas(self.root, width=512, height=512)
+        self.canvas = tk.Canvas(self.root, width=512, height=512, backgroung="grey)
         self.canvas.pack(side="right", padx=20, pady=20)
 
         self.input_frame = ctk.CTkFrame(self.root, height=100)
@@ -50,9 +50,10 @@ class App:
             self.generated_image = resized_image
             image_tk = ImageTk.PhotoImage(resized_image)
             self.root.after(10, self.progressbar.stop)
-            self.root.after(10,self.progressbar.pack_forget)  
+            self.root.after(10, self.progressbar.pack_forget)  
             self.canvas.create_image(0, 0, anchor=tk.NW, image=image_tk)
             self.canvas.image_tk = image_tk 
+            self.save_button.grid()
 
         except Exception as e:
             print(f"Error generating image: {e}")
