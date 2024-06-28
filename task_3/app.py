@@ -12,7 +12,7 @@ class App:
 
         ctk.set_appearance_mode("dark")
 
-        self.canvas = tk.Canvas(self.root, width=512, height=512, backgroung="grey)
+        self.canvas = tk.Canvas(self.root, width=512, height=512, backgroung="grey")
         self.canvas.pack(side="right", padx=20, pady=20)
 
         self.input_frame = ctk.CTkFrame(self.root, height=100)
