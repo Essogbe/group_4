@@ -1,0 +1,7 @@
+pillow 
+customtkinter 
+requests 
+diffusers 
+torch 
+transformers 
+safetensors
