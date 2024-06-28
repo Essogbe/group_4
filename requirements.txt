@@ -1,12 +1,10 @@
 
-*TACHE2*
-En R : 
--ggplot
-En Python :
+# TACHE2
+# En Python :
 -pandas
 -Matplotlib
 -msvc-runtime 
-*TACHE 3*
+# TACHE 3
 pillow 
 customtkinter 
 requests 
