@@ -128,6 +128,6 @@ La zone grise autour de la ligne bleue indique l'intervalle de confiance, soulig
    - **TOKAN Princia** : 20%
    - **COMADOU Syldon** : 35%
   ## Tâche 3
-   - **Ismael OGOUBIYI** - 32%
-   - **Romuald AMEGBEDJI** - 36%
-   - **Leonce OROU AWA** - 32%
+   - **Ismael OGOUBIYI** - 34%
+   - **Romuald AMEGBEDJI** - 33%
+   - **Leonce OROU AWA** - 33%
