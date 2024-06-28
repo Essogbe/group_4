@@ -57,12 +57,12 @@
    - listen_sse et fetch_generated_image : Gèrent la communication avec l'API distante.
  
  ## Contributeurs
-    - **Ismael OGOUBIYI**
-    - **Romuald AMEGBEDJI**
-    - **Leonce OROU AWA**
+   - **Ismael OGOUBIYI**
+   - **Romuald AMEGBEDJI**
+   - **Leonce OROU AWA**
  ## Remarques
-    * Le modèle est téléchargé et mis en cache dans le répertoire courant.
-    * Pour l'utilisation d'une API distante, l'application demande l'URL de l'API.
+   * Le modèle est téléchargé et mis en cache dans le répertoire courant.
+   * Pour l'utilisation d'une API distante, l'application demande l'URL de l'API.
 
 # Contributions
   ## Tâche 1
