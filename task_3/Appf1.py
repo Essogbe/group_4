@@ -1,8 +1,13 @@
 import tkinter as tk
+from io import BytesIO
+from tkinter import messagebox
 import customtkinter as ctk
 from PIL import Image, ImageTk
 from diffusers import StableDiffusionPipeline
 import threading
+from sseclient import SSEClient
+
+import requests
 
 class App:
     def __init__(self, root):
@@ -38,6 +43,37 @@ class App:
 
             threading.Thread(target=self.generate_image_thread, args=(description,)).start()
 
+    def listen_sse(self,url, description):
+        try:
+            url = 'http://localhost:5000/generate_progress'
+            response = requests.post(url, json={"text": description}, stream=True)
+
+            client = SSEClient(response.iter_lines())
+            for event in client.events():
+                if event.event == 'message':
+                    message_data = event.data.strip()
+                    if message_data.startswith('data:image_id:'):
+                        image_id = message_data.split(':')[2]
+                        self.fetch_generated_image(image_id)
+                        break
+
+        except Exception as e:
+            messagebox.showerror("Error", f"Error listening to SSE: {e}")
+
+    def fetch_generated_image(self, url,image_id):
+        try:
+            url = f'{url}/get_generated_image/{image_id}'
+            response = requests.get(url)
+            if response.status_code == 200:
+                image_bytes = response.content
+                image = Image.open(BytesIO(image_bytes))
+                image = image.resize((512, 512), resample=Image.LANCZOS)
+                image_tk = ImageTk.PhotoImage(image)
+                self.canvas.create_image(0, 0, anchor=tk.NW, image=image_tk)
+                self.canvas.image_tk = image_tk
+
+        except Exception as e:
+            messagebox.showerror("Error", f"Error fetching image: {e}")
     def generate_image_thread(self, description):
         import torch
         def callback_on_step_end(pipe, step: int, timestep: int, latents: torch.FloatTensor, **kwargs):
