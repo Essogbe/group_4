@@ -1,3 +1,11 @@
+
+*TACHE2*
+En R : 
+-ggplot
+En Python :
+-pandas
+-Matplotlib
+*TACHE 3*
 pillow 
 customtkinter 
 requests 
