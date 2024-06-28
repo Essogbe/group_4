@@ -2,19 +2,19 @@
 ## GeniArt
 GeniArt est une application basée sur Tkinter qui utilise un modèle de diffusion pour générer des images à partir de descriptions textuelles. L'application offre également la possibilité de sauvegarder les images générées.
 
-##Prérequis
+## Prérequis
 Assurez-vous d'avoir Python 3.7 ou une version ultérieure installée sur votre machine.
 
 
-##Installation
+## Installation
 1. Clonez le dépôt ou téléchargez les fichiers sources.
 
 2. Créez et activez un environnement virtuel :
   ###Windows
-'''
+```
 python -m venv venv
 .\venv\Scripts\activate
-'''
+```
 
   ###Linux/Mac
 '''
