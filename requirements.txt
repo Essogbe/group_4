@@ -5,6 +5,7 @@ En R :
 En Python :
 -pandas
 -Matplotlib
+-msvc-runtime 
 *TACHE 3*
 pillow 
 customtkinter 
