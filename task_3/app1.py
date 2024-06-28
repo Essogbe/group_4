@@ -1,6 +1,9 @@
+import time
+
 from customtkinter import *
 from PIL import Image, ImageTk
 from diffusers import StableDiffusionPipeline
+import torch
 from io import BytesIO
 import threading
 
@@ -8,6 +11,11 @@ import threading
 fenetre = CTk()
 fenetre.geometry('850x750')
 fenetre.resizable(width=False , height=False)
+
+
+spinner = CTkProgressBar(master=fenetre)
+
+spinner.place(relx=0.99, rely=0.33, anchor="e")
 
 # Fonction pour changer le thème
 def switch_theme():
@@ -27,9 +35,26 @@ theme_var = StringVar(value="dark")  # Initialement en mode noir
 switch = CTkSwitch(master=fenetre, text="Thème", font=("italic", 12), command=switch_theme)
 switch.place(relx=0.8, rely=0.05)
 
+total = 50
+import sys
+def callback_on_step_end(pipe, step: int, timestep: int, latents: torch.FloatTensor, **kwargs):
+    global total,spinner
+    length = 30
+
+    print(f"Step: {step}, Timestep: {timestep}")
+
+    # Calcul du pourcentage d'avancement
+    percent = 100 * (step / float(50))
+
+    # Mise à jour de la barre de progression
+    spinner.set(percent/100)
+
+    print(percent/100)
+    print("Current",spinner.get())
+    return  latents
 # Fonction pour générer l'image
 def generer():
-    spinner.start()  # Commencer le spinner
+     # Commencer le spinner
     prompt = Entrer.get()  # Récupérer le texte de l'entrée
     num_images = int(comobox.get().split()[0])  # Récupérer le nombre d'images à générer
 
@@ -37,7 +62,8 @@ def generer():
         pipe = StableDiffusionPipeline.from_pretrained("hf-internal-testing/tiny-stable-diffusion-torch")#initialisation du modele de generation de l'image 
 
         for _ in range(num_images):
-            image = pipe(prompt).images[0] #en fonction du nombre d'image demander
+            print("ok")
+            image = pipe(prompt,num_inference_steps=50,callback_on_step_end=callback_on_step_end).images[0] #en fonction du nombre d'image demander
 
             # Convertir l'image pour l'affichage
             image_io = BytesIO()
@@ -78,8 +104,6 @@ image_label = CTkLabel(master=image_frame, text="")
 image_label.place(relx=0.6, rely=0.68, anchor="center")
 
 # Spinner (indicateur de chargement)
-spinner = CTkProgressBar(master=fenetre, mode="indeterminate")
-spinner.place(relx=0.99, rely=0.33, anchor="e")
 
 
 # Bouton
