@@ -17,7 +17,7 @@ class Array:
         self.data = data.copy()
         # cas de 2d ( chaque liste dans la liste est aussi un Array)
         if isinstance(data[0], list):
-            for i in range(self.data):
+            for i in range(len(self.data)):
                 self.data[i] = Array(self.data[i])
 
         # Pour obtenir un élément spécifique ou une tranche du tableau
