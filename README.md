@@ -49,7 +49,7 @@ print(f"i: {i}")
 ```
 
 # Tâche 2
-## Contribution des membres du groupe
+## Contributeurs
  - **SODABI Emmanuella : Histogramme en R**
  - **KINZOUN Elfried : Nuage de points en R**
  - **TOKAN Princia : Histogramme en python**
