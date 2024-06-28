@@ -1,5 +1,11 @@
 # Tâche 1
 # Tâche 2
+## Contribution des membres du groupe
+
+ ### SODABI Emmanuella : Histogramme en R 
+### KINZOUN Elfried : Nuage de points en R
+### TOKAN Princia : Histogramme en python
+### COMADOU Syldon : Nuage de points en python
 # Tâche 3
 ## GeniArt
 GeniArt est une application basée sur Tkinter qui utilise un modèle de diffusion pour générer des images à partir de descriptions textuelles. L'application offre également la possibilité de sauvegarder les images générées.
