@@ -23,9 +23,9 @@ source venv/bin/activate
 ```
 
 4. Installez les dépendances nécessaires :
-   ```
-   pip install -r requirements.txt
-   ```
+```
+pip install -r requirements.txt
+```
 
 ## Utilisation
 1. Lancez l'application :
