@@ -122,6 +122,12 @@ La zone grise autour de la ligne bleue indique l'intervalle de confiance, soulig
 
 # Contributions
   ## Tâche 1
+   - **Ghilth GBAGUIDI** :20%
+   - **HOUEZO Juste** : 20%
+   - **AMEGBEDJI Romuald** : 20%
+   - **KINZOUN Elfried** : 20%
+   - **SOKEGBE Yohan Kœllyn Mc Donnel** : 20%
+  
   ## Tâche 2
    - **KINZOUN Elfried** :25%
    - **SODABI Emmanuella** : 20%
