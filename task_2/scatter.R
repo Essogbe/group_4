@@ -1,6 +1,6 @@
 #Projet R et python avancer
 
-data <- read.csv("/home/elfriedkinzoun/Downloads/arch/Housing.csv")
+data <- read.csv("Housing.csv")
 
 data
 
