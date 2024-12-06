@@ -1,10 +1,6 @@
-
-# TACHE2
-# En Python :
--pandas
--Matplotlib
--msvc-runtime 
-# TACHE 3
+pandas
+matplotlib
+msvc-runtime 
 pillow 
 customtkinter 
 requests 
